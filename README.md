@@ -17,3 +17,10 @@ git add болон git commit ашиглах
 Өөрчлөлтүүдийг GitHub рүү git push ашиглан илгээх
 
 GitHub дээрх шинэ өөрчлөлтийг git pull ашиглан татах
+## 4. Хэрэглэх программ хангамж
+Git
+
+Git Bash
+
+GitHub account
+· Интернэт холболт
