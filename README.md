@@ -24,3 +24,7 @@ Git Bash
 
 GitHub account
 · Интернэт холболт
+
+## branch дээр хийсэн өөрчлөлт
+
+энэ хэсгийг feature-readme branch дээр нэмсэн.
