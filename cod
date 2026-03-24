@@ -1,0 +1,172 @@
+
+User@216-19 MINGW64 ~ (master)
+$ mkdir desktop
+mkdir: cannot create directory ‘desktop’: File exists
+
+User@216-19 MINGW64 ~ (master)
+$ mkdir desktop/shalglt
+mkdir: cannot create directory ‘desktop/shalglt’: File exists
+
+User@216-19 MINGW64 ~ (master)
+$ cd desktop/shalglt
+
+User@216-19 MINGW64 ~/desktop/shalglt (master|MERGING)
+$ git clone https://github.com/batbolor777/batbolor1.git
+Cloning into 'batbolor1'...
+remote: Enumerating objects: 19, done.
+remote: Counting objects: 100% (19/19), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 19 (delta 4), reused 14 (delta 2), pack-reused 0 (from 0)
+Receiving objects: 100% (19/19), done.
+Resolving deltas: 100% (4/4), done.
+
+User@216-19 MINGW64 ~/desktop/shalglt (master|MERGING)
+$ cd batbolor1
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$ git add README.md
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$ git commit -m "initial commit: README created"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'User@216-19.(none)')
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$ git config user.email "batboloruugnbaatar4@gmail.com"
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$ git config user.name "batbolor"
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$ git commit -m "initial commit: README created"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$ echo"shalglt" > README.md
+bash: echoshalglt: command not found
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$ echo "shalglt" > README.md
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$ git commit -m "initial commit: README created"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$ git checkout -b feature-test
+Switched to a new branch 'feature-test'
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (feature-test)
+$ echo "git PR test" >> README.md
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (feature-test)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (feature-test)
+$ git commit -m "Update README: added PR test text"
+[feature-test 3481571] Update README: added PR test text
+ 1 file changed, 2 insertions(+), 36 deletions(-)
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (feature-test)
+$ git push origin feature-test
+To https://github.com/batbolor777/batbolor1.git
+ ! [rejected]        feature-test -> feature-test (non-fast-forward)
+error: failed to push some refs to 'https://github.com/batbolor777/batbolor1.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (feature-test)
+$ git pull origin feature-test
+From https://github.com/batbolor777/batbolor1
+ * branch            feature-test -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (feature-test)
+$ git push origin feature-test
+To https://github.com/batbolor777/batbolor1.git
+ ! [rejected]        feature-test -> feature-test (non-fast-forward)
+error: failed to push some refs to 'https://github.com/batbolor777/batbolor1.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (feature-test)
+$ git push origin feature-test
+To https://github.com/batbolor777/batbolor1.git
+ ! [rejected]        feature-test -> feature-test (non-fast-forward)
+error: failed to push some refs to 'https://github.com/batbolor777/batbolor1.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (feature-test)
+$ git add README.md
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (feature-test)
+$ git commit -m "Update README: added PR test text"
+On branch feature-test
+nothing to commit, working tree clean
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (feature-test)
+$ git push origin feature-test
+To https://github.com/batbolor777/batbolor1.git
+ ! [rejected]        feature-test -> feature-test (non-fast-forward)
+error: failed to push some refs to 'https://github.com/batbolor777/batbolor1.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (feature-test)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$ git pull origin main
+From https://github.com/batbolor777/batbolor1
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$ git log --oneline --graph --all
+* 3481571 (feature-test) Update README: added PR test text
+* 64dc9f7 (HEAD -> main, origin/main, origin/HEAD) add personal information
+*   b5ce80b Merge pull request #1 from batbolor777/feature-readme
+|\
+| * e3282fa (origin/feature-readme) u[date README from feature branch
+|/
+* 6805122 Update README.md
+* 9bd5b75 README file
+* 663ef0c (origin/feature-test) Update README: added PR test text
+* bdf2e0a Initial commit: README file addedd
+
+User@216-19 MINGW64 ~/desktop/shalglt/batbolor1 (main)
+$
